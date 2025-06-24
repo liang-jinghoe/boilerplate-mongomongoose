@@ -14,7 +14,7 @@ const personSchema = new mongoose.Schema({
     type: Number,
     default: 0
   },
-  favouriteFoods: {
+  favoriteFoods: {
     type: [String]
   }
 });
