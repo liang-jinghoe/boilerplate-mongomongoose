@@ -7,10 +7,12 @@ console.log(`Connecing to ${process.env.MONGO_URI}`);
 
 const personSchema = new mongoose.Schema({
   name: {
-    type: String
+    type: String,
+    default: "name"
   },
   age: {
-    type: Number
+    type: Number,
+    default: 0
   },
   favouriteFoods: {
     type: [String]
